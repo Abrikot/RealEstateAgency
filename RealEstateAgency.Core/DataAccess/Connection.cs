@@ -83,6 +83,11 @@ namespace RealEstateAgency.Core.DataAccess
 
             try
             {
+                if (string.IsNullOrEmpty(dbFilePath))
+                {
+                    dbFilePath = System.IO.Path.Combine(PCLStorage.FileSystem.Current.LocalStorage.Path, "estate_agency.db");
+                }
+
                 // Vérification de l'existence du fichier
                 PCLStorage.IFolder folder = await PCLStorage.FileSystem.Current.LocalStorage.GetFolderAsync(System.IO.Path.GetDirectoryName(dbFilePath));
                 if (await folder.CheckExistsAsync(System.IO.Path.GetFileName(dbFilePath)) == PCLStorage.ExistenceCheckResult.NotFound)
