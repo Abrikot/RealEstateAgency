@@ -1,0 +1,1 @@
+D:\Documents\Cours\DUT\S4\projet.net\RealEstateAgency\RealEstateAgency.WPFClient\bin\Debug\RealEstateAgency.WPFClient.exe.config
