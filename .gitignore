@@ -1,7 +1,7 @@
 # This file is used to ignore files which are generated
 # ----------------------------------------------------------------------------
 
-.vs
+/.vs
 *.Debug
 *.release
 *.user
@@ -74,4 +74,3 @@ Thumbs.db
 # --------
 *.dll
 *.exe
-
