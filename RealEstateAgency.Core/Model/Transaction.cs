@@ -40,7 +40,6 @@ namespace RealEstateAgency.Core.Model
                 _id = value;
             }
         }
-
         public int Estate_id
         {
             get
@@ -53,7 +52,6 @@ namespace RealEstateAgency.Core.Model
                 _estate_id = value;
             }
         }
-
         public bool Furnished
         {
             get
@@ -66,7 +64,6 @@ namespace RealEstateAgency.Core.Model
                 _furnished = value;
             }
         }
-
         public float Proposal_price
         {
             get
@@ -79,7 +76,6 @@ namespace RealEstateAgency.Core.Model
                 _proposal_price = value;
             }
         }
-
         public float Real_price
         {
             get
@@ -92,7 +88,6 @@ namespace RealEstateAgency.Core.Model
                 _real_price = value;
             }
         }
-
         public float Proposal_fees
         {
             get
@@ -105,7 +100,6 @@ namespace RealEstateAgency.Core.Model
                 _proposal_fees = value;
             }
         }
-
         public float Real_fees
         {
             get
@@ -118,7 +112,6 @@ namespace RealEstateAgency.Core.Model
                 _real_fees = value;
             }
         }
-
         public string Title
         {
             get
@@ -131,7 +124,6 @@ namespace RealEstateAgency.Core.Model
                 _title = value;
             }
         }
-
         public string Description
         {
             get
@@ -144,7 +136,6 @@ namespace RealEstateAgency.Core.Model
                 _description = value;
             }
         }
-
         public DateTime Publication_date
         {
             get
@@ -157,7 +148,6 @@ namespace RealEstateAgency.Core.Model
                 _publication_date = value;
             }
         }
-
         public DateTime Transaction_date
         {
             get
@@ -170,7 +160,6 @@ namespace RealEstateAgency.Core.Model
                 _transaction_date = value;
             }
         }
-
         public bool Transaction_done
         {
             get
@@ -183,7 +172,6 @@ namespace RealEstateAgency.Core.Model
                 _transaction_done = value;
             }
         }
-
         public int Client_id
         {
             get
@@ -196,7 +184,6 @@ namespace RealEstateAgency.Core.Model
                 _client_id = value;
             }
         }
-
         public int Owner_id
         {
             get

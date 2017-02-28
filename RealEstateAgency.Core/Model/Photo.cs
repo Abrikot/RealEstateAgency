@@ -28,7 +28,6 @@ namespace RealEstateAgency.Core.Model
                 _id = value;
             }
         }
-
         public int Estate_id
         {
             get
@@ -41,7 +40,6 @@ namespace RealEstateAgency.Core.Model
                 _estate_id = value;
             }
         }
-
         public string Title
         {
             get
@@ -54,7 +52,6 @@ namespace RealEstateAgency.Core.Model
                 _title = value;
             }
         }
-
         public string Photo_base64
         {
             get
@@ -67,7 +64,6 @@ namespace RealEstateAgency.Core.Model
                 _photo_base64 = value;
             }
         }
-
         public DateTime Shooting_date
         {
             get

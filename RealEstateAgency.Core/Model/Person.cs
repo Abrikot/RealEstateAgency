@@ -32,7 +32,6 @@ namespace RealEstateAgency.Core.Model
                 _id = value;
             }
         }
-
         public string Last_name
         {
             get
@@ -45,7 +44,6 @@ namespace RealEstateAgency.Core.Model
                 _last_name = value;
             }
         }
-
         public string First_name
         {
             get
@@ -58,7 +56,6 @@ namespace RealEstateAgency.Core.Model
                 _first_name = value;
             }
         }
-
         public int Phone
         {
             get
@@ -71,7 +68,6 @@ namespace RealEstateAgency.Core.Model
                 _phone = value;
             }
         }
-
         public int Cellphone
         {
             get
@@ -84,7 +80,6 @@ namespace RealEstateAgency.Core.Model
                 _cellphone = value;
             }
         }
-
         public string Mail
         {
             get
@@ -97,7 +92,6 @@ namespace RealEstateAgency.Core.Model
                 _mail = value;
             }
         }
-
         public string Address
         {
             get
@@ -110,7 +104,6 @@ namespace RealEstateAgency.Core.Model
                 _address = value;
             }
         }
-
         public int Zip
         {
             get
@@ -123,7 +116,6 @@ namespace RealEstateAgency.Core.Model
                 _zip = value;
             }
         }
-
         public string City
         {
             get

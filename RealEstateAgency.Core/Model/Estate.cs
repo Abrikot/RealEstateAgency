@@ -41,7 +41,6 @@ namespace RealEstateAgency.Core.Model
                 _id = value;
             }
         }
-
         public float Surface
         {
             get
@@ -54,7 +53,6 @@ namespace RealEstateAgency.Core.Model
                 _surface = value;
             }
         }
-
         public float Surface_carrez
         {
             get
@@ -67,7 +65,6 @@ namespace RealEstateAgency.Core.Model
                 _surface_carrez = value;
             }
         }
-
         public int Rooms_count
         {
             get
@@ -80,7 +77,6 @@ namespace RealEstateAgency.Core.Model
                 _rooms_count = value;
             }
         }
-
         public string Address
         {
             get
@@ -93,7 +89,6 @@ namespace RealEstateAgency.Core.Model
                 _address = value;
             }
         }
-
         public int Zip
         {
             get
@@ -106,7 +101,6 @@ namespace RealEstateAgency.Core.Model
                 _zip = value;
             }
         }
-
         public string City
         {
             get
@@ -119,7 +113,6 @@ namespace RealEstateAgency.Core.Model
                 _city = value;
             }
         }
-
         public float Estimated_price
         {
             get
@@ -132,7 +125,6 @@ namespace RealEstateAgency.Core.Model
                 _estimated_price = value;
             }
         }
-
         public float Annual_charges
         {
             get
@@ -145,7 +137,6 @@ namespace RealEstateAgency.Core.Model
                 _annual_charges = value;
             }
         }
-
         public float Property_taxes
         {
             get
@@ -158,7 +149,6 @@ namespace RealEstateAgency.Core.Model
                 _property_taxes = value;
             }
         }
-
         public int Float_number
         {
             get
@@ -171,7 +161,6 @@ namespace RealEstateAgency.Core.Model
                 _float_number = value;
             }
         }
-
         public int Floar_count
         {
             get
@@ -184,7 +173,6 @@ namespace RealEstateAgency.Core.Model
                 _floar_count = value;
             }
         }
-
         public bool Elevator
         {
             get
@@ -197,7 +185,6 @@ namespace RealEstateAgency.Core.Model
                 _elevator = value;
             }
         }
-
         public int Main_photo_id
         {
             get
@@ -210,7 +197,6 @@ namespace RealEstateAgency.Core.Model
                 _main_photo_id = value;
             }
         }
-
         public int Commercial_id
         {
             get
