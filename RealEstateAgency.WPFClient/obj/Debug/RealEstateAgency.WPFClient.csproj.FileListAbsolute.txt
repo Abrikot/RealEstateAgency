@@ -1,2 +1,0 @@
-D:\Documents\Cours\DUT\S4\projet.net\RealEstateAgency\RealEstateAgency.WPFClient\bin\Debug\RealEstateAgency.WPFClient.exe.config
-Z:\Documents\Visual Studio 2015\Projects\RealEstateAgency\RealEstateAgency.WPFClient\bin\Debug\RealEstateAgency.WPFClient.exe.config

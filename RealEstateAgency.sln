@@ -3,9 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RealEstateAgency.Core", "RealEstateAgency.Core\RealEstateAgency.Core.csproj", "{6907B591-24E7-48DD-AE7D-747FB1B5E86C}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RealEstateAgency.WPFClient", "RealEstateAgency.WPFClient\RealEstateAgency.WPFClient.csproj", "{4EFA18C5-2328-4460-A1E5-995E329A5113}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RealEstateAgency", "RealEstateAgency\RealEstateAgency.csproj", "{3FB154E1-226F-438B-9E99-D690C0FFEBE4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,14 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{6907B591-24E7-48DD-AE7D-747FB1B5E86C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6907B591-24E7-48DD-AE7D-747FB1B5E86C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6907B591-24E7-48DD-AE7D-747FB1B5E86C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6907B591-24E7-48DD-AE7D-747FB1B5E86C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4EFA18C5-2328-4460-A1E5-995E329A5113}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4EFA18C5-2328-4460-A1E5-995E329A5113}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4EFA18C5-2328-4460-A1E5-995E329A5113}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4EFA18C5-2328-4460-A1E5-995E329A5113}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3FB154E1-226F-438B-9E99-D690C0FFEBE4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3FB154E1-226F-438B-9E99-D690C0FFEBE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3FB154E1-226F-438B-9E99-D690C0FFEBE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3FB154E1-226F-438B-9E99-D690C0FFEBE4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
