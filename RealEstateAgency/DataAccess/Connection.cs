@@ -1383,6 +1383,5 @@ namespace RealEstateAgency.DataAccess
         }
 
         #endregion
-
     }
 }

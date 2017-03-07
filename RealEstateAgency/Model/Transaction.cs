@@ -8,7 +8,7 @@ using SQLite.Net.Attributes;
 namespace RealEstateAgency.Model
 {
     [Table("transaction")]
-    class Transaction   : Parameter
+    public class Transaction : ViewModels.BaseNotifyPropertyChanged
     {
         // Enum
         public enum Sale_or_Rent { Sale, Rent }

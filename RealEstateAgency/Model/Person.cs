@@ -8,7 +8,7 @@ using SQLite.Net.Attributes;
 namespace RealEstateAgency.Model
 {
     [Table("person")]
-    class Person    : Parameter
+    public class Person : ViewModels.BaseNotifyPropertyChanged
     {
         // Attributs
         private int _id;

@@ -12,22 +12,22 @@ namespace RealEstateAgency.ViewModels
         public HomeViewModel() : this(false) { }
         public HomeViewModel(bool synchronizeWithContext = false) : base(synchronizeWithContext) { }
 
-        public int EstatesCount
+        public int? EstatesCount
         {
             get
             {
-                return (int)GetProperty();
+                return (int?)GetProperty();
             }
             set
             {
                 SetProperty(value);
             }
         }
-        public int EstatesOnSellCount
+        public int? EstatesOnSellCount
         {
             get
             {
-                return (int)GetProperty();
+                return (int?)GetProperty();
             }
             set
             {

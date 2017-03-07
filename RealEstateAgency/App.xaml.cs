@@ -22,12 +22,18 @@ namespace RealEstateAgency
                 Application.Current.Shutdown();
                 return;
             }
+
             await dbConn.InitializeDatabaseAsync();
+
             if (Tools.Notifications.ShowErrors(dbConn.Errors))
             {
                 Application.Current.Shutdown();
                 return;
             }
+
+            // Ouverture de la fenêtre
+            MainWindow m = new MainWindow();
+            m.Show();
         }
     }
 }
