@@ -104,7 +104,9 @@
     <Compile Include="Model\Transaction.cs" />
     <Compile Include="Tools\Database.cs" />
     <Compile Include="Tools\ExtensionMethods.cs" />
+    <Compile Include="Tools\Notifications.cs" />
     <Compile Include="ViewModels\BaseNotifyPropertyChanged.cs" />
+    <Compile Include="ViewModels\HomeViewModel.cs" />
     <Compile Include="Views\MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>

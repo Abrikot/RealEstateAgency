@@ -3,11 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using SQLite.Net.Attributes;
 
 namespace RealEstateAgency.Model
 {
+    [Table("estate")]
     class Estate    : Parameter
     {
+
         // Enum
         public enum Type { House, Flat, Field, Garage }
 
@@ -22,13 +25,14 @@ namespace RealEstateAgency.Model
         private float _estimated_price;
         private float _annual_charges;
         private float _property_taxes;
-        private int _float_number;
-        private int _floar_count;
+        private int _floor_number;
+        private int _floor_count;
         private bool _elevator;
         private int _main_photo_id;
         private int _commercial_id;
 
         // Propriétés
+        [Column("id"), PrimaryKey, AutoIncrement]
         public int Id
         {
             get
@@ -41,6 +45,7 @@ namespace RealEstateAgency.Model
                 _id = value;
             }
         }
+        [Column("surface")]
         public float Surface
         {
             get
@@ -53,6 +58,7 @@ namespace RealEstateAgency.Model
                 _surface = value;
             }
         }
+        [Column("surface_carrez")]
         public float Surface_carrez
         {
             get
@@ -65,6 +71,7 @@ namespace RealEstateAgency.Model
                 _surface_carrez = value;
             }
         }
+        [Column("rooms_count")]
         public int Rooms_count
         {
             get
@@ -77,6 +84,7 @@ namespace RealEstateAgency.Model
                 _rooms_count = value;
             }
         }
+        [Column("address")]
         public string Address
         {
             get
@@ -89,6 +97,7 @@ namespace RealEstateAgency.Model
                 _address = value;
             }
         }
+        [Column("zip")]
         public int Zip
         {
             get
@@ -101,6 +110,7 @@ namespace RealEstateAgency.Model
                 _zip = value;
             }
         }
+        [Column("city")]
         public string City
         {
             get
@@ -113,6 +123,7 @@ namespace RealEstateAgency.Model
                 _city = value;
             }
         }
+        [Column("esimated_price")]
         public float Estimated_price
         {
             get
@@ -125,6 +136,7 @@ namespace RealEstateAgency.Model
                 _estimated_price = value;
             }
         }
+        [Column("annual_charges")]
         public float Annual_charges
         {
             get
@@ -137,6 +149,7 @@ namespace RealEstateAgency.Model
                 _annual_charges = value;
             }
         }
+        [Column("property_taxes")]
         public float Property_taxes
         {
             get
@@ -149,30 +162,33 @@ namespace RealEstateAgency.Model
                 _property_taxes = value;
             }
         }
-        public int Float_number
+        [Column("floor_number")]
+        public int Floor_number
         {
             get
             {
-                return _float_number;
+                return _floor_number;
             }
 
             set
             {
-                _float_number = value;
+                _floor_number = value;
             }
         }
-        public int Floar_count
+        [Column("floor_count")]
+        public int Floor_count
         {
             get
             {
-                return _floar_count;
+                return _floor_count;
             }
 
             set
             {
-                _floar_count = value;
+                _floor_count = value;
             }
         }
+        [Column("elevator")]
         public bool Elevator
         {
             get
@@ -185,6 +201,7 @@ namespace RealEstateAgency.Model
                 _elevator = value;
             }
         }
+        [Column("main_photo_id")]
         public int Main_photo_id
         {
             get
@@ -197,6 +214,7 @@ namespace RealEstateAgency.Model
                 _main_photo_id = value;
             }
         }
+        [Column("commercial_id")]
         public int Commercial_id
         {
             get

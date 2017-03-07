@@ -3,9 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using SQLite.Net.Attributes;
 
 namespace RealEstateAgency.Model
 {
+    [Table("person")]
     class Person    : Parameter
     {
         // Attributs
@@ -20,6 +22,7 @@ namespace RealEstateAgency.Model
         private string _city;
 
         // Propriétés
+        [Column("id"), PrimaryKey, AutoIncrement]
         public int Id
         {
             get
@@ -32,6 +35,7 @@ namespace RealEstateAgency.Model
                 _id = value;
             }
         }
+        [Column("last_name"), NotNull]
         public string Last_name
         {
             get
@@ -44,6 +48,7 @@ namespace RealEstateAgency.Model
                 _last_name = value;
             }
         }
+        [Column("first_name"), NotNull]
         public string First_name
         {
             get
@@ -56,6 +61,7 @@ namespace RealEstateAgency.Model
                 _first_name = value;
             }
         }
+        [Column("phone")]
         public int Phone
         {
             get
@@ -68,6 +74,7 @@ namespace RealEstateAgency.Model
                 _phone = value;
             }
         }
+        [Column("cellphone")]
         public int Cellphone
         {
             get
@@ -80,6 +87,7 @@ namespace RealEstateAgency.Model
                 _cellphone = value;
             }
         }
+        [Column("mail")]
         public string Mail
         {
             get
@@ -92,6 +100,7 @@ namespace RealEstateAgency.Model
                 _mail = value;
             }
         }
+        [Column("address")]
         public string Address
         {
             get
@@ -104,6 +113,7 @@ namespace RealEstateAgency.Model
                 _address = value;
             }
         }
+        [Column("zip")]
         public int Zip
         {
             get
@@ -116,6 +126,7 @@ namespace RealEstateAgency.Model
                 _zip = value;
             }
         }
+        [Column("city")]
         public string City
         {
             get

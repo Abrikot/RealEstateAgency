@@ -3,9 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using SQLite.Net.Attributes;
 
 namespace RealEstateAgency.Model
 {
+    [Table("transaction")]
     class Transaction   : Parameter
     {
         // Enum
@@ -26,8 +28,10 @@ namespace RealEstateAgency.Model
         private bool _transaction_done;
         private int _client_id;
         private int _owner_id;
+        private Sale_or_Rent _type;
 
         // Propriétés
+        [Column("id"), PrimaryKey, AutoIncrement]
         public int Id
         {
             get
@@ -40,6 +44,7 @@ namespace RealEstateAgency.Model
                 _id = value;
             }
         }
+        [Column("estate_id")]
         public int Estate_id
         {
             get
@@ -52,6 +57,7 @@ namespace RealEstateAgency.Model
                 _estate_id = value;
             }
         }
+        [Column("furnished")]
         public bool Furnished
         {
             get
@@ -64,6 +70,7 @@ namespace RealEstateAgency.Model
                 _furnished = value;
             }
         }
+        [Column("proposal_price")]
         public float Proposal_price
         {
             get
@@ -76,6 +83,7 @@ namespace RealEstateAgency.Model
                 _proposal_price = value;
             }
         }
+        [Column("real_price")]
         public float Real_price
         {
             get
@@ -88,6 +96,7 @@ namespace RealEstateAgency.Model
                 _real_price = value;
             }
         }
+        [Column("proposal_fees")]
         public float Proposal_fees
         {
             get
@@ -100,6 +109,7 @@ namespace RealEstateAgency.Model
                 _proposal_fees = value;
             }
         }
+        [Column("real_fees")]
         public float Real_fees
         {
             get
@@ -112,6 +122,7 @@ namespace RealEstateAgency.Model
                 _real_fees = value;
             }
         }
+        [Column("title")]
         public string Title
         {
             get
@@ -124,6 +135,7 @@ namespace RealEstateAgency.Model
                 _title = value;
             }
         }
+        [Column("description")]
         public string Description
         {
             get
@@ -136,6 +148,7 @@ namespace RealEstateAgency.Model
                 _description = value;
             }
         }
+        [Column("publication_date")]
         public DateTime Publication_date
         {
             get
@@ -148,6 +161,7 @@ namespace RealEstateAgency.Model
                 _publication_date = value;
             }
         }
+        [Column("transaction_date")]
         public DateTime Transaction_date
         {
             get
@@ -160,6 +174,7 @@ namespace RealEstateAgency.Model
                 _transaction_date = value;
             }
         }
+        [Column("transaction_done")]
         public bool Transaction_done
         {
             get
@@ -172,6 +187,7 @@ namespace RealEstateAgency.Model
                 _transaction_done = value;
             }
         }
+        [Column("client_id")]
         public int Client_id
         {
             get
@@ -184,6 +200,7 @@ namespace RealEstateAgency.Model
                 _client_id = value;
             }
         }
+        [Column("owner_id")]
         public int Owner_id
         {
             get
@@ -194,6 +211,19 @@ namespace RealEstateAgency.Model
             set
             {
                 _owner_id = value;
+            }
+        }
+        [Column("type")]
+        public Sale_or_Rent Type
+        {
+            get
+            {
+                return _type;
+            }
+
+            set
+            {
+                _type = value;
             }
         }
     }

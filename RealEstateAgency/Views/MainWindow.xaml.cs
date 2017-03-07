@@ -24,5 +24,10 @@ namespace RealEstateAgency
         {
             InitializeComponent();
         }
+
+        private async void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            await ((ViewModels.HomeViewModel)DataContext).InitializeData();
+        }
     }
 }

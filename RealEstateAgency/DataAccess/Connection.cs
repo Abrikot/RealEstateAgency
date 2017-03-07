@@ -37,7 +37,7 @@ namespace RealEstateAgency.DataAccess
             if (_connection == null || !_connection._connectionInitialized)
             {
                 _connection = new Connection();
-                await _connection.Initialize(dbFilePath, false);
+                await _connection.Initialize(dbFilePath, true);
             }
 
             return _connection;
@@ -937,7 +937,14 @@ namespace RealEstateAgency.DataAccess
             //----------------------------------------------------------------------------------
             // TODO : Ajouter le code de création des tables
             //----------------------------------------------------------------------------------
-
+            this.CreateTable<Model.Person>();
+            errors.AddRange(_errors);
+            this.CreateTable<Model.Estate>();
+            errors.AddRange(_errors);
+            this.CreateTable<Model.Photo>();
+            errors.AddRange(_errors);
+            this.CreateTable<Model.Transaction>();
+            errors.AddRange(_errors);
 
 
 
@@ -981,11 +988,18 @@ namespace RealEstateAgency.DataAccess
             await this.CreateTableAsync<Model.Parameter>();
             errors.AddRange(_errors);
 
-            
+
             //----------------------------------------------------------------------------------
             // TODO : Ajouter le code de création des tables
             //----------------------------------------------------------------------------------
-
+            await this.CreateTableAsync<Model.Person>();
+            errors.AddRange(_errors);
+            await this.CreateTableAsync<Model.Estate>();
+            errors.AddRange(_errors);
+            await this.CreateTableAsync<Model.Photo>();
+            errors.AddRange(_errors);
+            await this.CreateTableAsync<Model.Transaction>();
+            errors.AddRange(_errors);
 
 
 
