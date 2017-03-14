@@ -23,3 +23,7 @@ D:\Documents\Cours\DUT\S4\projet.net\RealEstateAgency\RealEstateAgency\obj\Debug
 D:\Documents\Cours\DUT\S4\projet.net\RealEstateAgency\RealEstateAgency\obj\Debug\RealEstateAgency.csprojResolveAssemblyReference.cache
 D:\Documents\Cours\DUT\S4\projet.net\RealEstateAgency\RealEstateAgency\obj\Debug\Views\AddEditWindow.g.cs
 D:\Documents\Cours\DUT\S4\projet.net\RealEstateAgency\RealEstateAgency\obj\Debug\Views\AddEditWindow.baml
+D:\Documents\Cours\DUT\S4\projet.net\RealEstateAgency\RealEstateAgency\obj\Debug\Views\ChoixBien.g.cs
+D:\Documents\Cours\DUT\S4\projet.net\RealEstateAgency\RealEstateAgency\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\Documents\Cours\DUT\S4\projet.net\RealEstateAgency\RealEstateAgency\obj\Debug\App.baml
+D:\Documents\Cours\DUT\S4\projet.net\RealEstateAgency\RealEstateAgency\obj\Debug\Views\ChoixBien.baml

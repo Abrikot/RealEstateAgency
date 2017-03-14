@@ -32,7 +32,7 @@ namespace RealEstateAgency.Model
             }
         }
         [Column("estate_id")]
-        public int Estate_id
+        public int EstateId
         {
             get
             {
@@ -58,7 +58,7 @@ namespace RealEstateAgency.Model
             }
         }
         [Column("photo_base64")]
-        public string Photo_base64
+        public string Base64
         {
             get
             {
@@ -71,7 +71,7 @@ namespace RealEstateAgency.Model
             }
         }
         [Column("shootind_date")]
-        public DateTime Shooting_date
+        public DateTime ShootingDate
         {
             get
             {

@@ -29,7 +29,7 @@ namespace RealEstateAgency.Model
         private int _floor_number;
         private int _floor_count;
         private bool _elevator;
-        private int _main_photo_id;
+        private int? _main_photo_id;
         private int _commercial_id;
 
         // Propriétés
@@ -73,7 +73,7 @@ namespace RealEstateAgency.Model
             }
         }
         [Column("surface_carrez")]
-        public float Surface_carrez
+        public float SurfaceCarrez
         {
             get
             {
@@ -86,7 +86,7 @@ namespace RealEstateAgency.Model
             }
         }
         [Column("rooms_count")]
-        public int Rooms_count
+        public int RoomsCount
         {
             get
             {
@@ -138,7 +138,7 @@ namespace RealEstateAgency.Model
             }
         }
         [Column("esimated_price")]
-        public float Estimated_price
+        public float EstimatedPrice
         {
             get
             {
@@ -151,7 +151,7 @@ namespace RealEstateAgency.Model
             }
         }
         [Column("annual_charges")]
-        public float Annual_charges
+        public float AnnualCharges
         {
             get
             {
@@ -164,7 +164,7 @@ namespace RealEstateAgency.Model
             }
         }
         [Column("property_taxes")]
-        public float Property_taxes
+        public float PropertyTaxes
         {
             get
             {
@@ -177,7 +177,7 @@ namespace RealEstateAgency.Model
             }
         }
         [Column("floor_number")]
-        public int Floor_number
+        public int FloorNumber
         {
             get
             {
@@ -190,7 +190,7 @@ namespace RealEstateAgency.Model
             }
         }
         [Column("floor_count")]
-        public int Floor_count
+        public int FloorCount
         {
             get
             {
@@ -216,7 +216,7 @@ namespace RealEstateAgency.Model
             }
         }
         [Column("main_photo_id")]
-        public int Main_photo_id
+        public int? MainPhotoId
         {
             get
             {
@@ -229,7 +229,7 @@ namespace RealEstateAgency.Model
             }
         }
         [Column("commercial_id")]
-        public int Commercial_id
+        public int CommercialId
         {
             get
             {

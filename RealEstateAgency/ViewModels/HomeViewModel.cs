@@ -43,5 +43,32 @@ namespace RealEstateAgency.ViewModels
             EstatesOnSellCount = await dbConn.SelectCountAsync<Model.Transaction>((t) => !t.Transaction_done && t.Type == Model.Transaction.Sale_or_Rent.Sale);
             Tools.Notifications.ShowErrors(dbConn.Errors);
         }
+
+
+        public Commands.Command New
+        {
+            get
+            {
+                return new Commands.Command(async () =>
+                {
+                    Views.AddEditWindow w = new Views.AddEditWindow();
+                    w.DataContext = new AddEditModel();
+                    w.Show();
+                });
+            }
+        }
+
+        public Commands.Command ViewEstatesList
+        {
+            get
+            {
+                return new Commands.Command(async () =>
+                {
+                    Views.ChoixBien w = new Views.ChoixBien();
+                    w.DataContext = new EstatesListViewModel();
+                    w.Show();
+                });
+            }
+        }
     }
 }
