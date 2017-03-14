@@ -9,28 +9,33 @@
         Title="MainWindow" Height="350" Width="525"
         Loaded="Window_Loaded">
 
-    <Window.DataContext>
-        <vm:HomeViewModel/>
-    </Window.DataContext>
-    <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="Auto"/>
-            <ColumnDefinition Width="5*"/>
-            <ColumnDefinition Width="Auto"/>
-            <ColumnDefinition Width="*"/>
-        </Grid.ColumnDefinitions>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="*" />
-            <RowDefinition Height="Auto" />
-            <RowDefinition Height="10" />
-            <RowDefinition Height="Auto" />
-            <RowDefinition Height="*" />
-        </Grid.RowDefinitions>
+    <StackPanel Orientation="Vertical">
+        <ToolBar>
+            <Button Command="New" Content="Ajouter un bien" />
+            <Button Command="Open" Content="Modifier un bien" />
+        </ToolBar>
 
-        <TextBlock Grid.Column="1" Grid.Row="1" Text="Nombre de biens disponibles à la vente : "/>
-        <TextBlock Grid.Column="3" Grid.Row="1" Text="{Binding EstatesOnSellCount}"/>
-        <TextBlock Grid.Column="1" Grid.Row="3" Text="Nombre de biens disponibles : "/>
-        <TextBlock Grid.Column="3" Grid.Row="3" Text="{Binding EstatesCount}"/>
-    </Grid>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="5*"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="10" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+
+            <TextBlock Grid.Column="1" Grid.Row="1" Text="Nombre de biens disponibles à la vente : "/>
+            <TextBlock Grid.Column="3" Grid.Row="1" Text="{Binding EstatesOnSellCount}"/>
+            <TextBlock Grid.Column="1" Grid.Row="3" Text="Nombre de biens disponibles : "/>
+            <TextBlock Grid.Column="3" Grid.Row="3" Text="{Binding EstatesCount}"/>
+
+        </Grid>
+    </StackPanel>
 </Window>

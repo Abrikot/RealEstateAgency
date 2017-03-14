@@ -32,8 +32,14 @@ namespace RealEstateAgency
             }
 
             // Ouverture de la fenêtre
-            MainWindow m = new MainWindow();
-            m.Show();
+            //MainWindow m = new MainWindow();
+            //m.DataContext = new ViewModels.HomeViewModel();
+            //m.Show();
+            RealEstateAgency.Model.Estate estate = await dbConn.SelectItemAsync<Model.Estate>("");
+
+            Views.AddEditWindow a = new Views.AddEditWindow();
+            a.DataContext = new ViewModels.AddEditModel();
+            a.Show();
         }
     }
 }

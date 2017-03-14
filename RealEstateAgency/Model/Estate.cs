@@ -16,6 +16,7 @@ namespace RealEstateAgency.Model
 
         // Attributs
         private int _id;
+        private Type _type;
         private float _surface;
         private float _surface_carrez;
         private int _rooms_count;
@@ -43,6 +44,19 @@ namespace RealEstateAgency.Model
             set
             {
                 _id = value;
+            }
+        }
+        [Column("type")]
+        public Type EstateType
+        {
+            get
+            {
+                return _type;
+            }
+
+            set
+            {
+                _type = value;
             }
         }
         [Column("surface")]

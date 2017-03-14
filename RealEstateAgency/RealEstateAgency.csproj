@@ -81,6 +81,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="Views\AddEditWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -105,8 +109,12 @@
     <Compile Include="Tools\Database.cs" />
     <Compile Include="Tools\ExtensionMethods.cs" />
     <Compile Include="Tools\Notifications.cs" />
+    <Compile Include="ViewModels\AddEditModel.cs" />
     <Compile Include="ViewModels\BaseNotifyPropertyChanged.cs" />
     <Compile Include="ViewModels\HomeViewModel.cs" />
+    <Compile Include="Views\AddEditWindow.xaml.cs">
+      <DependentUpon>AddEditWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>

@@ -42,6 +42,6 @@ namespace RealEstateAgency.ViewModels
             Tools.Notifications.ShowErrors(dbConn.Errors);
             EstatesOnSellCount = await dbConn.SelectCountAsync<Model.Transaction>((t) => !t.Transaction_done && t.Type == Model.Transaction.Sale_or_Rent.Sale);
             Tools.Notifications.ShowErrors(dbConn.Errors);
-        }   
+        }
     }
 }

@@ -12,7 +12,6 @@ D:\Documents\Cours\DUT\S4\projet.net\RealEstateAgency\RealEstateAgency\bin\Debug
 D:\Documents\Cours\DUT\S4\projet.net\RealEstateAgency\RealEstateAgency\bin\Debug\PCLStorage.Abstractions.xml
 D:\Documents\Cours\DUT\S4\projet.net\RealEstateAgency\RealEstateAgency\obj\Debug\Views\MainWindow.g.cs
 D:\Documents\Cours\DUT\S4\projet.net\RealEstateAgency\RealEstateAgency\obj\Debug\App.g.cs
-D:\Documents\Cours\DUT\S4\projet.net\RealEstateAgency\RealEstateAgency\obj\Debug\GeneratedInternalTypeHelper.g.cs
 D:\Documents\Cours\DUT\S4\projet.net\RealEstateAgency\RealEstateAgency\obj\Debug\RealEstateAgency_MarkupCompile.cache
 D:\Documents\Cours\DUT\S4\projet.net\RealEstateAgency\RealEstateAgency\obj\Debug\RealEstateAgency_MarkupCompile.lref
 D:\Documents\Cours\DUT\S4\projet.net\RealEstateAgency\RealEstateAgency\obj\Debug\Views\MainWindow.baml
@@ -22,3 +21,5 @@ D:\Documents\Cours\DUT\S4\projet.net\RealEstateAgency\RealEstateAgency\obj\Debug
 D:\Documents\Cours\DUT\S4\projet.net\RealEstateAgency\RealEstateAgency\obj\Debug\RealEstateAgency.exe
 D:\Documents\Cours\DUT\S4\projet.net\RealEstateAgency\RealEstateAgency\obj\Debug\RealEstateAgency.pdb
 D:\Documents\Cours\DUT\S4\projet.net\RealEstateAgency\RealEstateAgency\obj\Debug\RealEstateAgency.csprojResolveAssemblyReference.cache
+D:\Documents\Cours\DUT\S4\projet.net\RealEstateAgency\RealEstateAgency\obj\Debug\Views\AddEditWindow.g.cs
+D:\Documents\Cours\DUT\S4\projet.net\RealEstateAgency\RealEstateAgency\obj\Debug\Views\AddEditWindow.baml
