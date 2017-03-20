@@ -6,12 +6,16 @@
         xmlns:sys="clr-namespace:System;assembly=mscorlib"
         xmlns:model="clr-namespace:RealEstateAgency.Model"
         xmlns:local="clr-namespace:RealEstateAgency.Views"
+        xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+        xmlns:behaviors="clr-namespace:RealEstateAgency.Behaviors"
         mc:Ignorable="d"
         x:Name="AddEditWindowName"
         Title="AddEditWindow"
-        Loaded="Window_Loaded">
+        Loaded="Window_Loaded"
+        Height="500"
+        Width="500">
     <Window.Resources>
-        <ObjectDataProvider x:Key="estateTypeList"
+        <ObjectDataProvider x:Key="estateTypesList"
                             MethodName="GetValues"
                             ObjectType="{x:Type sys:Enum}">
             <ObjectDataProvider.MethodParameters>
@@ -46,35 +50,90 @@
 
 
         <TextBlock Grid.Column="0" Grid.Row="0" Text="Type" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-        <ComboBox SelectedItem="{Binding Estate.EstateType}" ItemsSource="{Binding Source={StaticResource estateTypeList}}" Grid.Row="0" Grid.Column="1" Margin="5,0"  HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <ComboBox ItemsSource="{Binding Source={StaticResource estateTypesList}, Converter={StaticResource EnumValuesToLabelConverter}}" Grid.Row="0" Grid.Column="1" Margin="5,0"  HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
+            <ComboBox.SelectedItem>
+                <MultiBinding Converter="{StaticResource EnumValueToLabelMultiConverter}" Mode="TwoWay">
+                    <Binding Path="EstateProperty.EstateType" Mode="TwoWay"/>
+                    <Binding RelativeSource="{RelativeSource Self}" Mode="OneWay"/>
+                </MultiBinding>
+            </ComboBox.SelectedItem>
+        </ComboBox>
         <TextBlock Grid.Column="0" Grid.Row="1" Text="Surface" Margin="5,0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-        <TextBox Text="{Binding Estate.Surface}" Grid.Column="1" Grid.Row="1" Margin="5,0"  HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <TextBox Text="{Binding EstateProperty.Surface}" Grid.Column="1" Grid.Row="1" Margin="5,0"  HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
+            <i:Interaction.Behaviors>
+                <behaviors:NumericTextBoxBehavior AllowDecimal="False" />
+            </i:Interaction.Behaviors>
+        </TextBox>
         <TextBlock Grid.Column="0" Grid.Row="2" Text="Surface Carrez" Margin="5,0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-        <TextBox Text="{Binding Estate.Surface_carrez}" Grid.Column="1" Grid.Row="2" Margin="5,0"  HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <TextBox Text="{Binding EstateProperty.SurfaceCarrez}" Grid.Column="1" Grid.Row="2" Margin="5,0"  HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
+            <i:Interaction.Behaviors>
+                <behaviors:NumericTextBoxBehavior AllowDecimal="False" />
+            </i:Interaction.Behaviors>
+        </TextBox>
         <TextBlock Grid.Column="0" Grid.Row="3" Text="Nombre de pièces" Margin="5,0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-        <TextBox Text="{Binding Estate.Rooms_count}" Grid.Column="1" Grid.Row="3" Margin="5,0"  HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <TextBox Text="{Binding EstateProperty.RoomsCount}" Grid.Column="1" Grid.Row="3" Margin="5,0"  HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
+            <i:Interaction.Behaviors>
+                <behaviors:NumericTextBoxBehavior AllowDecimal="False" />
+            </i:Interaction.Behaviors>
+        </TextBox>
         <TextBlock Grid.Column="0" Grid.Row="4" Text="Adresse" Margin="5,0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-        <TextBox Text="{Binding Estate.Address}" Grid.Column="1" Grid.Row="4" Margin="5,0"  HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <TextBox Text="{Binding EstateProperty.Address}" Grid.Column="1" Grid.Row="4" Margin="5,0"  HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
         <TextBlock Grid.Column="0" Grid.Row="5" Text="Code postal" Margin="5,0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-        <TextBox Text="{Binding Estate.Zip}" Grid.Column="1" Grid.Row="5" Margin="5,0"  HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <TextBox Text="{Binding EstateProperty.Zip}" Grid.Column="1" Grid.Row="5" Margin="5,0"  HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
+            <i:Interaction.Behaviors>
+                <behaviors:NumericTextBoxBehavior AllowDecimal="False" />
+            </i:Interaction.Behaviors>
+        </TextBox>
         <TextBlock Grid.Column="0" Grid.Row="6" Text="Ville" Margin="5,0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-        <TextBox Text="{Binding Estate.City}" Grid.Column="1" Grid.Row="6" Margin="5,0"  HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <TextBox Text="{Binding EstateProperty.City}" Grid.Column="1" Grid.Row="6" Margin="5,0"  HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
         <TextBlock Grid.Column="0" Grid.Row="7" Text="Prix estimé" Margin="5,0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-        <TextBox Text="{Binding Estate.Estimated_price}" Grid.Column="1" Grid.Row="7" Margin="5,0"  HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <TextBox Text="{Binding EstateProperty.EstimatedPrice}" Grid.Column="1" Grid.Row="7" Margin="5,0"  HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
+            <i:Interaction.Behaviors>
+                <behaviors:NumericTextBoxBehavior AllowDecimal="True" />
+            </i:Interaction.Behaviors>
+        </TextBox>
         <TextBlock Grid.Column="0" Grid.Row="8" Text="Charges annuelles" Margin="5,0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-        <TextBox Text="{Binding Estate.Annual_charges}" Grid.Column="1" Grid.Row="8" Margin="5,0"  HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <TextBox Text="{Binding EstateProperty.AnnualCharges}" Grid.Column="1" Grid.Row="8" Margin="5,0"  HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
+            <i:Interaction.Behaviors>
+                <behaviors:NumericTextBoxBehavior AllowDecimal="True" />
+            </i:Interaction.Behaviors>
+        </TextBox>
         <TextBlock Grid.Column="0" Grid.Row="9" Text="Taxe de propriété" Margin="5,0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-        <TextBox Text="{Binding Estate.Property_taxes}" Grid.Column="1" Grid.Row="9" Margin="5,0"  HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <TextBox Text="{Binding EstateProperty.PropertyTaxes}" Grid.Column="1" Grid.Row="9" Margin="5,0"  HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
+            <i:Interaction.Behaviors>
+                <behaviors:NumericTextBoxBehavior AllowDecimal="True" />
+            </i:Interaction.Behaviors>
+        </TextBox>
         <TextBlock Grid.Column="0" Grid.Row="10" Text="Numéro d'étage" Margin="5,0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-        <TextBox Text="{Binding Estate.Floor_number}" Grid.Column="1" Grid.Row="10" Margin="5,0"  HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <TextBox Text="{Binding EstateProperty.FloorNumber}" Grid.Column="1" Grid.Row="10" Margin="5,0"  HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
+            <i:Interaction.Behaviors>
+                <behaviors:NumericTextBoxBehavior AllowDecimal="False" />
+            </i:Interaction.Behaviors>
+        </TextBox>
         <TextBlock Grid.Column="0" Grid.Row="11" Text="Nombre d'étages total" Margin="5,0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-        <TextBox Text="{Binding Estate.Floor_count}" Grid.Column="1" Grid.Row="11" Margin="5,0"  HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <TextBox Text="{Binding EstateProperty.FloorCount}" Grid.Column="1" Grid.Row="11" Margin="5,0"  HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
+            <i:Interaction.Behaviors>
+                <behaviors:NumericTextBoxBehavior AllowDecimal="False" />
+            </i:Interaction.Behaviors>
+        </TextBox>
         <TextBlock Grid.Column="0" Grid.Row="12" Text="Ascenseur" Margin="5,0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-        <TextBox Text="{Binding Estate.Elevator}" Grid.Column="1" Grid.Row="12" Margin="5,0"  HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <TextBox Text="{Binding EstateProperty.Elevator}" Grid.Column="1" Grid.Row="12" Margin="5,0"  HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
         <TextBlock Grid.Column="0" Grid.Row="13" Text="Photo" Margin="5,0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-        <TextBox Text="{Binding Estate.Main_photo_id}" Grid.Column="1" Grid.Row="13" Margin="5,0"  HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Grid Grid.Column="1" Grid.Row="13">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+            <TextBox Text="{Binding ImagePath, UpdateSourceTrigger=PropertyChanged}" Grid.Column="0" Margin="5,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" IsReadOnly="True"/>
+            <Button Content="Parcourir" Grid.Column="1" Margin="5,0" Command="{Binding ChooseImage}"/>
+        </Grid>
+
         <TextBlock Grid.Column="0" Grid.Row="14" Text="Commercial" Margin="5,0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-        <TextBox Text="{Binding Estate.Commercial_id}" Grid.Column="1" Grid.Row="14" Margin="5,0"  HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <TextBox Text="{Binding EstateProperty.CommercialId}" Grid.Column="1" Grid.Row="14" Margin="5,0"  HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
+            <i:Interaction.Behaviors>
+                <behaviors:NumericTextBoxBehavior AllowDecimal="False" />
+            </i:Interaction.Behaviors>
+        </TextBox>
         <Button Content="Annuler" Grid.Row="15" Grid.Column="0" Margin="5,0" Command="{Binding Cancel}" CommandParameter="{Binding ElementName=AddEditWindowName}"/>
         <Button Content="Valider" Grid.Row="15" Grid.Column="1" Margin="5,0" Command="{Binding Valid}" CommandParameter="{Binding ElementName=AddEditWindowName}"/>
     </Grid>

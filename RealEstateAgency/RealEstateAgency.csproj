@@ -63,6 +63,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Windows.Interactivity, Version=4.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -97,6 +98,7 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Behaviors\NumericTextBoxBehavior.cs" />
     <Compile Include="Commands\Command.cs" />
     <Compile Include="Commands\EventBindingArgs.cs" />
     <Compile Include="Commands\EventBindingCommand.cs" />
@@ -105,6 +107,8 @@
     <Compile Include="Commands\GenericEventBindingCommand.cs" />
     <Compile Include="Converters\Base64StringToBitmapImageConverter .cs" />
     <Compile Include="Converters\CurrencyConverter.cs" />
+    <Compile Include="Converters\EnumValuesToLabelConverter.cs" />
+    <Compile Include="Converters\EnumValueToLabelMultiConverter.cs" />
     <Compile Include="Converters\ObjectToStringConverter.cs" />
     <Compile Include="DataAccess\Connection.cs" />
     <Compile Include="Model\Estate.cs" />
@@ -113,6 +117,7 @@
     <Compile Include="Model\Photo.cs" />
     <Compile Include="Model\Transaction.cs" />
     <Compile Include="Tools\Database.cs" />
+    <Compile Include="Tools\EnumLabel.cs" />
     <Compile Include="Tools\ExtensionMethods.cs" />
     <Compile Include="Tools\Notifications.cs" />
     <Compile Include="ViewModels\AddEditModel.cs" />

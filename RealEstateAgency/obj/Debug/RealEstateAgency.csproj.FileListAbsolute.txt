@@ -27,3 +27,14 @@ D:\Documents\Cours\DUT\S4\projet.net\RealEstateAgency\RealEstateAgency\obj\Debug
 D:\Documents\Cours\DUT\S4\projet.net\RealEstateAgency\RealEstateAgency\obj\Debug\GeneratedInternalTypeHelper.g.cs
 D:\Documents\Cours\DUT\S4\projet.net\RealEstateAgency\RealEstateAgency\obj\Debug\App.baml
 D:\Documents\Cours\DUT\S4\projet.net\RealEstateAgency\RealEstateAgency\obj\Debug\Views\ChoixBien.baml
+D:\Documents\Cours\DUT\S4\projet.net\RealEstateAgency\RealEstateAgency\bin\Debug\System.Windows.Interactivity.dll
+D:\Documents\Cours\DUT\S4\projet.net\RealEstateAgency\RealEstateAgency\bin\Debug\de\System.Windows.Interactivity.resources.dll
+D:\Documents\Cours\DUT\S4\projet.net\RealEstateAgency\RealEstateAgency\bin\Debug\en\System.Windows.Interactivity.resources.dll
+D:\Documents\Cours\DUT\S4\projet.net\RealEstateAgency\RealEstateAgency\bin\Debug\es\System.Windows.Interactivity.resources.dll
+D:\Documents\Cours\DUT\S4\projet.net\RealEstateAgency\RealEstateAgency\bin\Debug\fr\System.Windows.Interactivity.resources.dll
+D:\Documents\Cours\DUT\S4\projet.net\RealEstateAgency\RealEstateAgency\bin\Debug\it\System.Windows.Interactivity.resources.dll
+D:\Documents\Cours\DUT\S4\projet.net\RealEstateAgency\RealEstateAgency\bin\Debug\ja\System.Windows.Interactivity.resources.dll
+D:\Documents\Cours\DUT\S4\projet.net\RealEstateAgency\RealEstateAgency\bin\Debug\ko\System.Windows.Interactivity.resources.dll
+D:\Documents\Cours\DUT\S4\projet.net\RealEstateAgency\RealEstateAgency\bin\Debug\ru\System.Windows.Interactivity.resources.dll
+D:\Documents\Cours\DUT\S4\projet.net\RealEstateAgency\RealEstateAgency\bin\Debug\zh-Hans\System.Windows.Interactivity.resources.dll
+D:\Documents\Cours\DUT\S4\projet.net\RealEstateAgency\RealEstateAgency\bin\Debug\zh-Hant\System.Windows.Interactivity.resources.dll

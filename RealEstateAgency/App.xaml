@@ -6,5 +6,8 @@
              Startup="Application_Startup">
     <Application.Resources>
         <c:Base64StringToBitmapImageConverter x:Key="Base64StringToBitmapImageConverter"/>
+        <c:DecimalToCurrencyConverter x:Key="DecimalToCurrencyConverter"/>
+        <c:EnumValueToLabelMultiConverter x:Key="EnumValueToLabelMultiConverter" />
+        <c:EnumValuesToLabelConverter x:Key="EnumValuesToLabelConverter" />
     </Application.Resources>
 </Application>

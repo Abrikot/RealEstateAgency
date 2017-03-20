@@ -16,21 +16,21 @@ namespace RealEstateAgency.Model
 
         // Attributs
         private int _id;
-        private Type _type;
-        private float _surface;
-        private float _surface_carrez;
-        private int _rooms_count;
+        private Type _type = Type.Field;
+        private float? _surface;
+        private float? _surface_carrez;
+        private int? _rooms_count;
         private string _address;
-        private int _zip;
+        private int? _zip;
         private string _city;
-        private float _estimated_price;
-        private float _annual_charges;
-        private float _property_taxes;
-        private int _floor_number;
-        private int _floor_count;
-        private bool _elevator;
+        private float? _estimated_price;
+        private float? _annual_charges;
+        private float? _property_taxes;
+        private int? _floor_number;
+        private int? _floor_count;
+        private bool? _elevator;
         private int? _main_photo_id;
-        private int _commercial_id;
+        private int? _commercial_id;
 
         // Propriétés
         [Column("id"), PrimaryKey, AutoIncrement]
@@ -60,7 +60,7 @@ namespace RealEstateAgency.Model
             }
         }
         [Column("surface")]
-        public float Surface
+        public float? Surface
         {
             get
             {
@@ -73,7 +73,7 @@ namespace RealEstateAgency.Model
             }
         }
         [Column("surface_carrez")]
-        public float SurfaceCarrez
+        public float? SurfaceCarrez
         {
             get
             {
@@ -86,7 +86,7 @@ namespace RealEstateAgency.Model
             }
         }
         [Column("rooms_count")]
-        public int RoomsCount
+        public int? RoomsCount
         {
             get
             {
@@ -112,7 +112,7 @@ namespace RealEstateAgency.Model
             }
         }
         [Column("zip")]
-        public int Zip
+        public int? Zip
         {
             get
             {
@@ -138,7 +138,7 @@ namespace RealEstateAgency.Model
             }
         }
         [Column("esimated_price")]
-        public float EstimatedPrice
+        public float? EstimatedPrice
         {
             get
             {
@@ -151,7 +151,7 @@ namespace RealEstateAgency.Model
             }
         }
         [Column("annual_charges")]
-        public float AnnualCharges
+        public float? AnnualCharges
         {
             get
             {
@@ -164,7 +164,7 @@ namespace RealEstateAgency.Model
             }
         }
         [Column("property_taxes")]
-        public float PropertyTaxes
+        public float? PropertyTaxes
         {
             get
             {
@@ -177,7 +177,7 @@ namespace RealEstateAgency.Model
             }
         }
         [Column("floor_number")]
-        public int FloorNumber
+        public int? FloorNumber
         {
             get
             {
@@ -190,7 +190,7 @@ namespace RealEstateAgency.Model
             }
         }
         [Column("floor_count")]
-        public int FloorCount
+        public int? FloorCount
         {
             get
             {
@@ -203,7 +203,7 @@ namespace RealEstateAgency.Model
             }
         }
         [Column("elevator")]
-        public bool Elevator
+        public bool? Elevator
         {
             get
             {
@@ -229,7 +229,7 @@ namespace RealEstateAgency.Model
             }
         }
         [Column("commercial_id")]
-        public int CommercialId
+        public int? CommercialId
         {
             get
             {

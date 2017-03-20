@@ -638,9 +638,9 @@ namespace RealEstateAgency.DataAccess
             }            
         }
 
-        public async Task<long> SelectLastInsertedAutoKeyAsync<T>()
+        public async Task<long> SelectLastInsertedAutoKeyAsync<T>() where T:class
         {
-            return await ExecuteScalarAsync<long>("SELECT last_insert_rowid()");
+            return await ExecuteScalarAsync<long>("SELECT seq FROM sqlite_sequence where name='" + Tools.Database.GetTableName<T>() + "'");
         }
 
         public async Task<bool> ExistsAsync<T>(T item) where T : class
